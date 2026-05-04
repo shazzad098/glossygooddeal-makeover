@@ -6,30 +6,30 @@ import { useEffect } from "react";
 
 // Product data for each service
 const productData = {
-  "power-systems": {
-    id: "power-systems",
-    title: "Power Systems & Switchgear",
-    category: "Electrical Power Distribution",
+  "electrical-power": {
+    id: "electrical-power",
+    title: "Electrical & Power Distribution",
+    category: "Power Systems",
     image: "/placeholder-power.jpg",
-    shortDescription: "MV/LV switchgear, transformers, panel boards engineered to IEC standards.",
-    longDescription: "Our comprehensive power systems and switchgear solutions are designed to meet the demanding requirements of modern industrial and commercial facilities. We provide complete MV/LV switchgear systems, distribution transformers, and custom panel boards that comply with international IEC standards. Our engineering team ensures optimal power distribution, safety, and reliability for your facility.",
+    shortDescription: "Complete MV/LV power distribution solutions including switchgear, transformers, busbar trunking systems, and panel boards.",
+    longDescription: "Our comprehensive electrical and power distribution solutions are designed to meet the demanding requirements of modern industrial and commercial facilities. We provide complete MV/LV switchgear systems, distribution transformers, busbar trunking systems, and custom panel boards that comply with international IEC standards. Our engineering team ensures optimal power distribution, safety, and reliability for your facility.",
     features: [
       "IEC 61439 compliant switchgear systems",
-      "Custom-designed LV/MV panels",
-      "Indoor and outdoor installations",
-      "IP54/IP65 protection ratings available",
-      "Integrated metering and monitoring",
-      "Arc flash protection systems",
-      "Modular design for easy expansion",
-      "Remote monitoring capabilities"
+      "Custom-designed LV/MV panels and distribution boards",
+      "EAE busbar trunking systems for high-density distribution",
+      "Indoor and outdoor installations available",
+      "IP54/IP65 protection ratings",
+      "Integrated metering and monitoring systems",
+      "Arc flash protection and safety systems",
+      "Modular design for easy future expansion"
     ],
     benefits: [
-      "Enhanced electrical safety and reliability",
+      "Enhanced electrical safety and system reliability",
       "Reduced downtime and maintenance costs",
       "Energy efficiency optimization",
-      "Scalable for future expansion",
-      "Compliance with international standards",
-      "24/7 technical support"
+      "Scalable infrastructure for future expansion",
+      "Full compliance with international standards",
+      "24/7 technical support and service"
     ],
     specifications: {
       "Voltage Rating": "Up to 33kV",
@@ -41,221 +41,137 @@ const productData = {
     },
     applications: [
       "Industrial manufacturing plants",
-      "Commercial buildings",
-      "Data centers",
+      "Commercial buildings and offices",
+      "Data centers and IT facilities",
       "Hospitals and healthcare facilities",
       "Educational institutions",
-      "Shopping complexes"
-    ]
-  },
-  "busbar-trunking": {
-    id: "busbar-trunking",
-    title: "Busbar Trunking Systems",
-    category: "Electrical Power Distribution",
-    image: "/placeholder-busbar.jpg",
-    shortDescription: "EAE busbar systems for high-density power distribution in modern facilities.",
-    longDescription: "EAE busbar trunking systems represent the future of power distribution in modern facilities. These systems offer superior flexibility, reliability, and efficiency compared to traditional cable systems. Perfect for high-rise buildings, data centers, and industrial facilities where space optimization and future expandability are critical.",
-    features: [
-      "High current capacity up to 6300A",
-      "Compact design saves space",
-      "Easy installation and modification",
-      "Excellent heat dissipation",
-      "Low voltage drop",
-      "Fire-resistant construction",
-      "Tap-off units at regular intervals",
-      "IP54/IP65/IP68 protection options"
-    ],
-    benefits: [
-      "30-50% space savings vs cables",
-      "Faster installation time",
-      "Easy reconfiguration and expansion",
-      "Lower lifetime maintenance costs",
-      "Superior electrical performance",
-      "Enhanced safety features"
-    ],
-    specifications: {
-      "Current Rating": "630A - 6300A",
-      "Voltage": "Up to 1000V",
-      "Frequency": "50/60 Hz",
-      "Protection": "IP54/IP65/IP68",
-      "Conductor Material": "Electrolytic Copper/Aluminum",
-      "Insulation": "Class B/F/H"
-    },
-    applications: [
-      "High-rise commercial buildings",
-      "Data centers and server rooms",
-      "Manufacturing facilities",
-      "Hospitals",
-      "Shopping malls",
-      "Airport terminals"
+      "Shopping complexes and malls"
     ]
   },
   "fire-safety": {
     id: "fire-safety",
-    title: "Fire & Life Safety Systems",
-    category: "Safety Solutions",
+    title: "Fire & Life Safety Solutions",
+    category: "Safety Systems",
     image: "/placeholder-fire.jpg",
-    shortDescription: "Detection, suppression and life-safety solutions certified by PCJ Industries.",
-    longDescription: "Comprehensive fire detection and suppression systems designed to protect lives and property. Our solutions include addressable fire alarm systems, gas suppression systems, sprinkler systems, and emergency evacuation systems. All products are certified by PCJ Industries and comply with NFPA and BS standards.",
+    shortDescription: "Comprehensive fire detection, suppression, and life safety systems certified to NFPA and BS standards.",
+    longDescription: "Comprehensive fire detection and suppression systems designed to protect lives and property. Our solutions include addressable fire alarm systems, gas suppression systems, sprinkler systems, and emergency evacuation systems. All products are certified and comply with NFPA, BS, and international fire safety standards.",
     features: [
-      "Addressable fire detection systems",
-      "Gas suppression (FM200, Novec 1230)",
-      "Sprinkler and hydrant systems",
-      "Emergency voice evacuation",
-      "Smoke and heat detectors",
-      "Manual call points",
-      "Fire control panels",
-      "Integration with building management"
+      "Addressable and conventional fire detection systems",
+      "Gas suppression systems (FM200, Novec 1230, CO2)",
+      "Automatic sprinkler and hydrant systems",
+      "Emergency voice evacuation systems",
+      "Smoke, heat, and flame detectors",
+      "Manual call points and break glass units",
+      "Advanced fire control panels",
+      "Integration with building management systems"
     ],
     benefits: [
-      "Early fire detection and warning",
+      "Early fire detection and timely warning",
       "Automated suppression response",
-      "Minimal false alarms",
-      "Life safety compliance",
-      "Property protection",
-      "Insurance premium reduction"
+      "Minimal false alarms with advanced detection",
+      "Full life safety compliance",
+      "Comprehensive property protection",
+      "Potential insurance premium reduction"
     ],
     specifications: {
       "Detection Type": "Smoke, Heat, Flame, Gas",
-      "System Type": "Conventional/Addressable",
-      "Suppression Agents": "FM200, Novec 1230, CO2",
+      "System Type": "Conventional/Addressable/Intelligent",
+      "Suppression Agents": "FM200, Novec 1230, CO2, Foam",
       "Standards": "NFPA, BS, EN",
       "Coverage": "Up to 2000 devices per loop",
-      "Backup": "72 hours standby"
+      "Backup Power": "72 hours standby"
     },
     applications: [
-      "Office buildings",
-      "Data centers",
-      "Industrial facilities",
-      "Warehouses",
-      "Hotels and hospitality",
-      "Residential complexes"
+      "Office buildings and corporate parks",
+      "Data centers and server rooms",
+      "Industrial facilities and warehouses",
+      "Hotels and hospitality venues",
+      "Residential complexes",
+      "Healthcare facilities"
     ]
   },
-  "solar-epc": {
-    id: "solar-epc",
-    title: "Solar EPC Solutions",
+  "solar-solutions": {
+    id: "solar-solutions",
+    title: "Sustainable Solar Solutions",
     category: "Renewable Energy",
     image: "/placeholder-solar.jpg",
-    shortDescription: "End-to-end design, supply, install and commissioning of grid-tied solar plants.",
-    longDescription: "Complete solar EPC (Engineering, Procurement, and Construction) services for grid-tied and off-grid solar power plants. From initial feasibility study to final commissioning, we handle every aspect of your solar project. Our solutions help reduce energy costs, carbon footprint, and provide energy independence.",
+    shortDescription: "End-to-end solar EPC services from feasibility study to commissioning of grid-tied and off-grid solar power plants.",
+    longDescription: "Complete solar EPC (Engineering, Procurement, and Construction) services for grid-tied and off-grid solar power plants. From initial feasibility study to final commissioning, we handle every aspect of your solar project. Our solutions help reduce energy costs, carbon footprint, and provide energy independence for businesses and communities.",
     features: [
-      "Site assessment and feasibility study",
+      "Comprehensive site assessment and feasibility study",
       "Custom system design and engineering",
       "Tier-1 solar panel procurement",
-      "Grid-tied and off-grid solutions",
-      "Net metering facilitation",
-      "Real-time monitoring systems",
-      "O&M services",
-      "Performance guarantees"
+      "Grid-tied, hybrid, and off-grid solutions",
+      "Net metering facilitation and approvals",
+      "Real-time IoT-based monitoring systems",
+      "Operation and maintenance (O&M) services",
+      "Performance guarantees and warranties"
     ],
     benefits: [
       "Up to 70% reduction in electricity bills",
       "ROI within 4-6 years",
       "25+ year system lifespan",
-      "Carbon footprint reduction",
-      "Energy independence",
-      "Government incentives available"
+      "Significant carbon footprint reduction",
+      "Energy independence and security",
+      "Government incentives and subsidies available"
     ],
     specifications: {
       "System Capacity": "10kW - 10MW+",
       "Panel Efficiency": "Up to 22%",
-      "Inverter Type": "String/Central/Micro",
-      "Mounting": "Rooftop/Ground/Carport",
-      "Monitoring": "IoT-based real-time",
-      "Warranty": "25 years performance"
+      "Inverter Type": "String/Central/Micro Inverters",
+      "Mounting Structure": "Rooftop/Ground/Carport/BIPV",
+      "Monitoring": "IoT-based real-time monitoring",
+      "Warranty": "25 years performance guarantee"
     },
     applications: [
-      "Industrial rooftops",
-      "Commercial buildings",
-      "Residential complexes",
-      "Solar farms",
-      "Agricultural installations",
+      "Industrial rooftops and factories",
+      "Commercial buildings and offices",
+      "Residential complexes and societies",
+      "Utility-scale solar farms",
+      "Agricultural and irrigation systems",
       "Remote off-grid locations"
     ]
   },
-  "industrial-automation": {
-    id: "industrial-automation",
-    title: "Industrial Automation",
-    category: "Automation & Control",
-    image: "/placeholder-automation.jpg",
-    shortDescription: "PLC, SCADA and process automation tailored to factory requirements.",
-    longDescription: "Advanced industrial automation solutions including PLC programming, SCADA systems, HMI design, and complete process automation. We help manufacturers improve productivity, quality, and operational efficiency through cutting-edge automation technologies from leading global brands.",
+  "civil-construction": {
+    id: "civil-construction",
+    title: "Civil & Industrial Construction",
+    category: "Construction Services",
+    image: "/placeholder-construction.jpg",
+    shortDescription: "Professional construction services for industrial facilities, commercial buildings, and infrastructure projects.",
+    longDescription: "Professional civil and industrial construction services covering the entire project lifecycle from planning to handover. We specialize in industrial facilities, commercial buildings, warehouses, and infrastructure projects. Our experienced team ensures quality construction, timely delivery, and adherence to all safety and regulatory standards.",
     features: [
-      "PLC programming and integration",
-      "SCADA system development",
-      "HMI design and implementation",
-      "VFD and motor control systems",
-      "Process instrumentation",
-      "Industrial networking",
-      "Predictive maintenance systems",
-      "Energy management systems"
+      "Complete project planning and design",
+      "Structural engineering and analysis",
+      "Foundation and structural work",
+      "Architectural finishing",
+      "MEP (Mechanical, Electrical, Plumbing) integration",
+      "Quality control and assurance",
+      "Safety management systems",
+      "Project management and coordination"
     ],
     benefits: [
-      "Increased production efficiency",
-      "Reduced operational costs",
-      "Improved product quality",
-      "Real-time process visibility",
-      "Predictive maintenance capabilities",
-      "Reduced downtime"
+      "Single-point responsibility for entire project",
+      "Experienced engineering and construction team",
+      "On-time project delivery",
+      "Cost-effective solutions",
+      "Quality assurance and warranty",
+      "Compliance with all building codes and regulations"
     ],
     specifications: {
-      "PLC Brands": "Siemens, ABB, Schneider",
-      "SCADA": "WinCC, Wonderware, Ignition",
-      "Communication": "Profibus, Profinet, Modbus",
-      "I/O Capacity": "Scalable",
-      "Redundancy": "Hot standby available",
-      "Security": "Industrial cybersecurity"
+      "Project Types": "Industrial, Commercial, Institutional",
+      "Construction Type": "RCC, Steel, Pre-engineered",
+      "Capacity": "Small scale to large industrial",
+      "Standards": "BCB, ACI, Eurocode",
+      "Quality": "ISO certified processes",
+      "Safety": "Zero-accident commitment"
     },
     applications: [
-      "Manufacturing plants",
-      "Process industries",
-      "Water treatment facilities",
-      "Power plants",
-      "Oil & gas facilities",
-      "Food & beverage industry"
-    ]
-  },
-  "direct-import": {
-    id: "direct-import",
-    title: "Direct Import & Supply",
-    category: "Supply Chain",
-    image: "/placeholder-import.jpg",
-    shortDescription: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine.",
-    longDescription: "As authorized partners of global leaders like ABB, Schneider Electric, and Siemens, we provide 100% genuine electrical components with full manufacturer warranty and traceability. Our direct import model ensures competitive pricing, authentic products, and reliable after-sales support.",
-    features: [
-      "Authorized distributor network",
-      "100% genuine products guaranteed",
-      "Full manufacturer warranty",
-      "Complete product traceability",
-      "Competitive pricing",
-      "Fast delivery",
-      "Technical support",
-      "After-sales service"
-    ],
-    benefits: [
-      "Eliminate counterfeit risk",
-      "Manufacturer warranty coverage",
-      "Competitive pricing",
-      "Reliable supply chain",
-      "Technical expertise",
-      "Quick replacement support"
-    ],
-    specifications: {
-      "Brands": "ABB, Schneider, Siemens, EAE",
-      "Product Range": "Complete portfolio",
-      "Warranty": "Manufacturer standard",
-      "Certification": "CE, UL, IEC",
-      "Origin": "Europe/Asia",
-      "Documentation": "Complete"
-    },
-    applications: [
-      "Project procurement",
-      "Maintenance & replacement",
-      "System upgrades",
-      "New installations",
-      "Emergency supply",
-      "Bulk orders"
+      "Industrial factories and plants",
+      "Warehouses and logistics centers",
+      "Commercial office buildings",
+      "Educational institutions",
+      "Healthcare facilities",
+      "Infrastructure projects"
     ]
   }
 };
