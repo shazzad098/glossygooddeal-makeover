@@ -1,15 +1,33 @@
-import { ArrowUpRight, Cable, Cpu, Flame, PlugZap, Sun, Truck } from "lucide-react";
+import { ArrowUpRight, Zap, Flame, Sun, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const services = [
-  { icon: PlugZap, title: "Power Systems & Switchgear", body: "MV/LV switchgear, transformers, panel boards engineered to IEC standards.", id: "power-systems" },
-  { icon: Cable, title: "Busbar Trunking", body: "EAE busbar systems for high-density power distribution in modern facilities.", id: "busbar-trunking" },
-  { icon: Flame, title: "Fire & Life Safety", body: "Detection, suppression and life-safety solutions certified by PCJ Industries.", id: "fire-safety" },
-  { icon: Sun, title: "Solar EPC", body: "End-to-end design, supply, install and commissioning of grid-tied solar plants.", id: "solar-epc" },
-  { icon: Cpu, title: "Industrial Automation", body: "PLC, SCADA and process automation tailored to factory requirements.", id: "industrial-automation" },
-  { icon: Truck, title: "Direct Import & Supply", body: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine.", id: "direct-import" },
+  { 
+    icon: Zap, 
+    title: "Electrical & Power Distribution", 
+    body: "Complete MV/LV power distribution solutions including switchgear, transformers, busbar trunking systems, and panel boards engineered to international IEC standards.", 
+    id: "electrical-power" 
+  },
+  { 
+    icon: Flame, 
+    title: "Fire & Life Safety Solutions", 
+    body: "Comprehensive fire detection, suppression, and life safety systems certified to NFPA and BS standards for complete building protection.", 
+    id: "fire-safety" 
+  },
+  { 
+    icon: Sun, 
+    title: "Sustainable Solar Solutions", 
+    body: "End-to-end solar EPC services from feasibility study to commissioning of grid-tied and off-grid solar power plants for sustainable energy.", 
+    id: "solar-solutions" 
+  },
+  { 
+    icon: Building, 
+    title: "Civil & Industrial Construction", 
+    body: "Professional construction services for industrial facilities, commercial buildings, and infrastructure projects with quality assurance.", 
+    id: "civil-construction" 
+  },
 ];
 
 export const ServicesSection = () => (
