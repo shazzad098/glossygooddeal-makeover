@@ -1,11 +1,9 @@
-import { ArrowRight, CheckCircle2, Clock, Shield, ThumbsUp, TrendingUp, Users, Zap, FileCheck, Truck, Wrench, Award, MessageCircle, Star, Heart, Coffee } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileCheck, Truck, Wrench, MessageCircle, Heart, Coffee } from "lucide-react";
 import { Link } from "react-router-dom";
 import PageShell from "@/components/PageShell";
-import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { services } from "@/sections/Services";
 import { useEffect, useRef, useState } from "react";
-
 const process = [
   { 
     step: "01", 
@@ -71,12 +69,7 @@ const faqs = [
   { q: "Are your products genuine?", a: "100%. We're authorized partners of ABB, Siemens, and Schneider. Every product is traceable to the manufacturer." },
 ];
 
-const stats = [
-  { value: "15+", label: "years in business", icon: Clock },
-  { value: "500+", label: "projects delivered", icon: ThumbsUp },
-  { value: "98%", label: "clients come back", icon: Heart },
-  { value: "24/7", label: "support", icon: Award },
-];
+
 
 const Services = () => {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
@@ -110,29 +103,6 @@ const Services = () => {
 
   return (
     <PageShell>
-      {/* Hero Section - Warm and welcoming */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-6">
-          {/* Trust badge */}
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
-              <Heart className="h-4 w-4 text-primary fill-primary" />
-              <span className="text-sm font-medium text-blue-700">Trusted since 2010</span>
-            </div>
-          </div>
-
-          {/* Stats - Simple and honest */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-8 border-t border-gray-100">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-500">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Services Grid - What we actually do */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6">
@@ -241,34 +211,6 @@ const Services = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials - Real people, real words */}
-      <section className="py-16 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What our clients say</h2>
-            <p className="text-gray-500">Don't take our word for it. Here's what people actually think.</p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(t.rating)].map((_, j) => (
-                    <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">"{t.text}"</p>
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm">{t.name}</p>
-                  <p className="text-xs text-gray-400">{t.role}</p>
-                  <p className="text-xs text-gray-300 mt-1">{t.days}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

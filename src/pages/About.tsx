@@ -26,11 +26,6 @@ const About = () => (
     <section className="py-16 md:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
-            <Heart className="h-4 w-4 text-primary fill-primary" />
-            <span className="text-sm font-medium text-blue-700">Building Bangladesh since 2010</span>
-          </div>
-          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
             We're not just engineers.{' '}
             <span className="text-primary">We're partners.</span>
