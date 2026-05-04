@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import About from "./pages/About.tsx";
 import Services from "./pages/Services.tsx";
+import ServiceDetail from "./pages/ServiceDetail.tsx";
 import AuthorizedAgent from "./pages/AuthorizedAgent.tsx";
 import Contact from "./pages/Contact.tsx";
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
           <Route path="/authorized-agent" element={<AuthorizedAgent />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
