@@ -54,7 +54,6 @@ export const About = () => (
     </div>
     <div className="mx-auto max-w-7xl px-6 relative z-10">
       <SectionHeading
-        eyebrow="About Good Deal"
         title={
           <>
             Bridging Global Innovation{" "}

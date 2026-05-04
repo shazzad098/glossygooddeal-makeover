@@ -23,7 +23,6 @@ export const WhyUs = () => (
   <section className="relative py-24 md:py-32 bg-secondary/50">
     <div className="mx-auto max-w-7xl px-6">
       <SectionHeading
-        eyebrow="Why Good Deal"
         title={<>The standard for <span className="text-primary italic">industrial trust.</span></>}
       />
 

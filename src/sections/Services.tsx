@@ -21,7 +21,6 @@ export const ServicesSection = () => (
     
     <div className="mx-auto max-w-7xl px-6 relative z-10">
       <SectionHeading
-        eyebrow="What we do"
         title={<>Turnkey engineering, <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent italic">end-to-end.</span></>}
         subtitle="From single-component supply to fully integrated EPC delivery — we handle the entire value chain so your facility stays safe, efficient and future-ready."
         className="text-center"

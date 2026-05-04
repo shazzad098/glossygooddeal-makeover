@@ -167,12 +167,6 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="container relative z-30 text-center text-white px-4">
-        <div className="mb-4 inline-block">
-          <span className="px-4 py-1.5 rounded-full text-xs font-medium bg-white/10 backdrop-blur-sm border border-white/20">
-            Welcome to GOOD DEAL
-          </span>
-        </div>
-        
         {/* Typing Animation Title */}
         <div className="mb-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
