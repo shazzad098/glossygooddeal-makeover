@@ -4,12 +4,12 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const services = [
-  { icon: PlugZap, title: "Power Systems & Switchgear", body: "MV/LV switchgear, transformers, panel boards engineered to IEC standards." },
-  { icon: Cable, title: "Busbar Trunking", body: "EAE busbar systems for high-density power distribution in modern facilities." },
-  { icon: Flame, title: "Fire & Life Safety", body: "Detection, suppression and life-safety solutions certified by PCJ Industries." },
-  { icon: Sun, title: "Solar EPC", body: "End-to-end design, supply, install and commissioning of grid-tied solar plants." },
-  { icon: Cpu, title: "Industrial Automation", body: "PLC, SCADA and process automation tailored to factory requirements." },
-  { icon: Truck, title: "Direct Import & Supply", body: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine." },
+  { icon: PlugZap, title: "Power Systems & Switchgear", body: "MV/LV switchgear, transformers, panel boards engineered to IEC standards.", id: "power-systems" },
+  { icon: Cable, title: "Busbar Trunking", body: "EAE busbar systems for high-density power distribution in modern facilities.", id: "busbar-trunking" },
+  { icon: Flame, title: "Fire & Life Safety", body: "Detection, suppression and life-safety solutions certified by PCJ Industries.", id: "fire-safety" },
+  { icon: Sun, title: "Solar EPC", body: "End-to-end design, supply, install and commissioning of grid-tied solar plants.", id: "solar-epc" },
+  { icon: Cpu, title: "Industrial Automation", body: "PLC, SCADA and process automation tailored to factory requirements.", id: "industrial-automation" },
+  { icon: Truck, title: "Direct Import & Supply", body: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine.", id: "direct-import" },
 ];
 
 export const ServicesSection = () => (
@@ -30,7 +30,7 @@ export const ServicesSection = () => (
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mt-12">
         {services.map((s, i) => (
           <Reveal key={s.title} delay={i * 70}>
-            <Link to="/services" className="group block h-full">
+            <Link to={`/service/${s.id}`} className="group block h-full">
               <article className="relative h-full p-5 rounded-2xl bg-white dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                 <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-secondary shadow-lg shadow-primary/25">
                   <s.icon className="h-5 w-5 text-white" />

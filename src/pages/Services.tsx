@@ -115,16 +115,18 @@ const Services = () => {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
-              <div key={s.title} className="p-6 rounded-2xl bg-white border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
-                  <s.icon className="h-6 w-6 text-primary" />
+              <Link key={s.title} to={`/service/${s.id}`} className="block">
+                <div className="p-6 rounded-2xl bg-white border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                    <s.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{s.body}</p>
+                  <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-blue-700">
+                    View Details <ArrowRight size={14} />
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{s.body}</p>
-                <Link to="/contact" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-blue-700">
-                  Ask about this <ArrowRight size={14} />
-                </Link>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
