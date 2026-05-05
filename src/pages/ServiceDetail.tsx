@@ -72,6 +72,53 @@ const productData = {
     image: "/placeholder-fire.jpg",
     shortDescription: "Detection, suppression and life-safety solutions certified by PCJ Industries & NFPA compliant.",
     longDescription: "Protecting lives and assets through state-of-the-art fire detection and suppression systems. We provide end-to-end solutions including addressable fire alarms, automatic gas suppression, and industrial fire pump systems, all adhering to NFPA and BNBC standards.",
+    subProducts: [
+      {
+        title: "Fire Protection System Design & Consultancy",
+        description: "Expert engineering and design of comprehensive fire protection systems tailored to meet international safety standards and codes.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_safety_inspection_1778005578583.png"
+      },
+      {
+        title: "Fire Detection & Alarm System Installation",
+        description: "State-of-the-art early warning systems including smoke detectors, heat sensors, and smart control panels for rapid response.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_alarm_system_1778005530359.png"
+      },
+      {
+        title: "Fire Suppression & Extinguishing Systems",
+        description: "Advanced automated suppression solutions including sprinklers, gas-based systems, and foam extinguishing technologies.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_suppression_system_1778005544650.png"
+      },
+      {
+        title: "Electrical & Lightning Safety",
+        description: "High-tech Early Streamer Emission (ESE) lightning arresters and surge protection devices ensuring complete electrical safety.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/lightning_protection_system_1778004872768.png"
+      },
+      {
+        title: "Fire Door & Emergency Exit Solutions",
+        description: "UL-Listed, fire-rated steel doors and highly visible emergency exit pathways to secure safe evacuation routes.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_rated_doors_1778005564592.png"
+      },
+      {
+        title: "Inspection, Testing & Commissioning",
+        description: "Rigorous testing and commissioning protocols to ensure all fire safety equipment functions flawlessly under critical conditions.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_safety_inspection_1778005578583.png"
+      },
+      {
+        title: "Maintenance & Annual Service Contracts (AMC)",
+        description: "Reliable round-the-clock maintenance services and AMCs to keep your life safety systems operational at all times.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_safety_inspection_1778005578583.png"
+      },
+      {
+        title: "Fire Safety Equipment Supply",
+        description: "Direct importer of genuine, globally certified fire safety equipment, guaranteeing authentic products and warranties.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_alarm_system_1778005530359.png"
+      },
+      {
+        title: "Fire Safety Quality Assurance",
+        description: "Strict adherence to IEC, NFPA, and BNBC compliance standards to provide unparalleled quality assurance in every project.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_safety_inspection_1778005578583.png"
+      }
+    ],
     features: [
       "Addressable fire detection systems",
       "Gas suppression (FM200, Novec 1230, CO2)",
@@ -114,6 +161,58 @@ const productData = {
     image: "/placeholder-solar.jpg",
     shortDescription: "End-to-end design, supply, install and commissioning of grid-tied & industrial solar plants.",
     longDescription: "Harnessing renewable energy through high-efficiency solar EPC services. We provide turnkey solutions for industrial rooftops and commercial plants, helping businesses transition to green energy while significantly reducing operational costs and carbon footprints.",
+    subProducts: [
+      {
+        title: "01. Utility Scale Solar Power Plant",
+        description: "Large-scale solar installations designed to generate bulk power for the grid, maximizing energy output and land utilization.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/utility_solar_plant_1778005715577.png"
+      },
+      {
+        title: "02. Industrial Rooftop PV System",
+        description: "Optimized solar systems for industrial facilities, reducing operational costs and carbon footprint efficiently.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/industrial_rooftop_solar_1778005732356.png"
+      },
+      {
+        title: "03. Battery Energy Storage System",
+        description: "Advanced energy storage solutions ensuring reliable power supply and grid stability around the clock.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/battery_storage_system_1778005749334.png"
+      },
+      {
+        title: "04. Residential PV Solution",
+        description: "Tailored solar power systems for homes, bringing sustainable and independent energy to your household.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/industrial_rooftop_solar_1778005732356.png"
+      },
+      {
+        title: "05. Solar Irrigation System",
+        description: "Eco-friendly solar-powered pumps and irrigation setups to support sustainable agricultural practices.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/utility_solar_plant_1778005715577.png"
+      },
+      {
+        title: "06. Floating Solar PV System",
+        description: "Innovative solar installations on water bodies, saving land space and increasing panel efficiency through natural cooling.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/floating_solar_pv_1778005768620.png"
+      },
+      {
+        title: "07. Building Integrated PV solution",
+        description: "Seamlessly integrated solar panels into building architecture, combining aesthetic design with energy generation.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/industrial_rooftop_solar_1778005732356.png"
+      },
+      {
+        title: "08. Solar Carport & EV Solution",
+        description: "Dual-purpose solar structures that provide shade for vehicles while generating clean energy for EV charging.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/solar_carport_ev_1778005783455.png"
+      },
+      {
+        title: "09. Energy Monitoring System",
+        description: "Real-time tracking and analytics platforms to optimize energy consumption and system performance.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/battery_storage_system_1778005749334.png"
+      },
+      {
+        title: "10. SCADA Solution",
+        description: "Supervisory Control and Data Acquisition systems for precise management and control of solar infrastructure.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/fire_safety_inspection_1778005578583.png"
+      }
+    ],
     features: [
       "Net metering facilitation with utility grid",
       "High-efficiency Tier-1 solar modules",
