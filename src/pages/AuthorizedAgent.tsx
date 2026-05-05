@@ -56,24 +56,6 @@ const AuthorizedAgent = () => {
                   <Link to="/services">See how we work</Link>
                 </Button>
               </div>
-
-              <div className="flex items-center gap-6 mt-10 pt-6 border-t border-gray-100">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 border-2 border-white" />
-                  ))}
-                </div>
-                <div>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">Trusted by 500+ companies</p>
-                </div>
-              </div>
             </div>
 
             <div className="relative">
@@ -114,7 +96,7 @@ const AuthorizedAgent = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">3+</div>
               <div className="text-sm text-gray-600">Years of experience</div>
             </div>
             <div className="text-center">

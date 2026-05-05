@@ -43,7 +43,7 @@ const stats = [
   { value: "500+", label: "Projects Completed" },
   { value: "50+", label: "Expert Engineers" },
   { value: "25+", label: "Global Partners" },
-];
+];  
 
 export const About = () => (
   <section id="about" className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
@@ -93,12 +93,6 @@ export const About = () => (
                 className="h-full w-full object-cover transform group-hover:scale-105 transition duration-700" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-black/50 backdrop-blur-md rounded-full text-white text-xs font-medium border border-white/20">
-                  <CheckCircle2 size={14} className="text-emerald-400" />
-                  ISO 9001:2021 Certified
-                </div>
-              </div>
             </div>
           </div>
         </Reveal>

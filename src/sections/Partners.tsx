@@ -2,8 +2,8 @@ import PartnerMarquee from "@/components/PartnerMarquee";
 import Reveal from "@/components/Reveal";
 
 export const Partners = () => (
-  <section className="relative py-16 bg-secondary/50">
-    <div className="mx-auto max-w-7xl px-6">
+  <section className="relative py-16">
+    <div className="mx-auto max-w-8xl px-6">
       <Reveal>
         <p className="mb-6 text-center text-xs font-medium uppercase tracking-[0.25em] text-muted-foreground">
           Authorized Partners & Direct Importers

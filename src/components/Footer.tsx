@@ -46,8 +46,8 @@ export const Footer = () => (
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-foreground">Reach Us</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2.5"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> Dhaka, Bangladesh</li>
-            <li className="flex items-start gap-2.5"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +880 1XXX-XXXXXX</li>
-            <li className="flex items-start gap-2.5"><Mail className="mt-0.5 h-4 w-4 text-primary" /> info@gooddeal-bd.com</li>
+            <li className="flex items-start gap-2.5"><Phone className="mt-0.5 h-4 w-4 text-primary" /> <a href="tel:+8801619302150" className="hover:text-primary transition-colors">+880 1619-302150</a></li>
+            <li className="flex items-start gap-2.5"><Mail className="mt-0.5 h-4 w-4 text-primary" /> <a href="mailto:info@gooddeal-bd.com" className="hover:text-primary transition-colors">info@gooddeal-bd.com</a></li>
           </ul>
         </div>
       </div>

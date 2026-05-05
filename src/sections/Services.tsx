@@ -4,12 +4,10 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const services = [
-  { icon: PlugZap, title: "Power Systems & Switchgear", body: "MV/LV switchgear, transformers, panel boards engineered to IEC standards.", id: "power-systems" },
-  { icon: Cable, title: "Busbar Trunking", body: "EAE busbar systems for high-density power distribution in modern facilities.", id: "busbar-trunking" },
-  { icon: Flame, title: "Fire & Life Safety", body: "Detection, suppression and life-safety solutions certified by PCJ Industries.", id: "fire-safety" },
-  { icon: Sun, title: "Solar EPC", body: "End-to-end design, supply, install and commissioning of grid-tied solar plants.", id: "solar-epc" },
-  { icon: Cpu, title: "Industrial Automation", body: "PLC, SCADA and process automation tailored to factory requirements.", id: "industrial-automation" },
-  { icon: Truck, title: "Direct Import & Supply", body: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine.", id: "direct-import" },
+  { icon: PlugZap, title: "Electrical & Power Distribution", body: "MV/LV switchgear, EAE busbar systems and transformers engineered to IEC standards.", id: "electrical-power" },
+  { icon: Flame, title: "Fire & Life Safety Solutions", body: "Detection, suppression and life-safety solutions certified by PCJ Industries & NFPA compliant.", id: "fire-safety" },
+  { icon: Sun, title: "Sustainable Solar Solutions", body: "End-to-end design, supply, install and commissioning of grid-tied & industrial solar plants.", id: "solar-solutions" },
+  { icon: Truck, title: "Civil & Industrial Construction", body: "Specialized industrial civil works, factory flooring and warehouse infrastructure development.", id: "civil-construction" },
 ];
 
 export const ServicesSection = () => (

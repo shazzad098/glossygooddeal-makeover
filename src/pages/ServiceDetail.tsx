@@ -6,256 +6,189 @@ import { useEffect } from "react";
 
 // Product data for each service
 const productData = {
-  "power-systems": {
-    id: "power-systems",
-    title: "Power Systems & Switchgear",
-    category: "Electrical Power Distribution",
+  "electrical-power": {
+    id: "electrical-power",
+    title: "Electrical & Power Distribution",
+    category: "Electrical Power",
     image: "/placeholder-power.jpg",
-    shortDescription: "MV/LV switchgear, transformers, panel boards engineered to IEC standards.",
-    longDescription: "Our comprehensive power systems and switchgear solutions are designed to meet the demanding requirements of modern industrial and commercial facilities. We provide complete MV/LV switchgear systems, distribution transformers, and custom panel boards that comply with international IEC standards. Our engineering team ensures optimal power distribution, safety, and reliability for your facility.",
+    shortDescription: "MV/LV switchgear, EAE busbar systems and transformers engineered to IEC standards.",
+    longDescription: "Our comprehensive electrical and power distribution solutions cover everything from high-voltage switchgear to low-voltage distribution boards and advanced busbar systems. We partner with global leaders like ABB, Siemens, and EAE to deliver reliable, safe, and efficient power infrastructure for industrial and commercial facilities.",
+    subProducts: [
+      {
+        title: "Lightning Protection Systems",
+        description: "High-tech ESE lightning arresters and precision earthing systems.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/lightning_protection_system_1778004872768.png"
+      },
+      {
+        title: "Low Voltage Distribution Panels",
+        description: "Custom-built LV panels using 100% genuine components from leading global brands.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/lv_distribution_panel_1778004887301.png"
+      },
+      {
+        title: "Busbar Trunking Systems",
+        description: "Efficient and space-saving power distribution for modern industrial facilities.",
+        image: "/home/shazzad/.gemini/antigravity/brain/2047c623-0b51-4a06-a3d4-237e42d706ea/busbar_trunking_system_1778004901655.png"
+      }
+    ],
     features: [
       "IEC 61439 compliant switchgear systems",
-      "Custom-designed LV/MV panels",
-      "Indoor and outdoor installations",
-      "IP54/IP65 protection ratings available",
-      "Integrated metering and monitoring",
-      "Arc flash protection systems",
-      "Modular design for easy expansion",
-      "Remote monitoring capabilities"
+      "EAE type-tested busbar trunking systems",
+      "Custom-designed LV/MV distribution panels",
+      "Dry-type and oil-immersed transformers",
+      "Arc flash protection and monitoring",
+      "Energy management & power quality analysis",
+      "Modular design for facility expansion",
+      "IP54/IP65/IP68 protection ratings"
     ],
     benefits: [
-      "Enhanced electrical safety and reliability",
-      "Reduced downtime and maintenance costs",
-      "Energy efficiency optimization",
-      "Scalable for future expansion",
-      "Compliance with international standards",
-      "24/7 technical support"
+      "Maximum electrical safety and reliability",
+      "Up to 40% space savings with busbar systems",
+      "Reduced installation time and maintenance",
+      "Optimized energy consumption",
+      "Compliance with BNBC, IEC and NFPA",
+      "24/7 technical support and maintenance"
     ],
     specifications: {
       "Voltage Rating": "Up to 33kV",
       "Current Rating": "Up to 6300A",
       "Frequency": "50/60 Hz",
       "Standards": "IEC 61439, IEC 62271",
-      "Protection Class": "IP54/IP65",
-      "Temperature Range": "-5°C to +40°C"
+      "Busbar Material": "Electrolytic Copper/Aluminum",
+      "Protection Class": "IP54/IP65/IP68"
     },
     applications: [
       "Industrial manufacturing plants",
-      "Commercial buildings",
-      "Data centers",
-      "Hospitals and healthcare facilities",
-      "Educational institutions",
-      "Shopping complexes"
-    ]
-  },
-  "busbar-trunking": {
-    id: "busbar-trunking",
-    title: "Busbar Trunking Systems",
-    category: "Electrical Power Distribution",
-    image: "/placeholder-busbar.jpg",
-    shortDescription: "EAE busbar systems for high-density power distribution in modern facilities.",
-    longDescription: "EAE busbar trunking systems represent the future of power distribution in modern facilities. These systems offer superior flexibility, reliability, and efficiency compared to traditional cable systems. Perfect for high-rise buildings, data centers, and industrial facilities where space optimization and future expandability are critical.",
-    features: [
-      "High current capacity up to 6300A",
-      "Compact design saves space",
-      "Easy installation and modification",
-      "Excellent heat dissipation",
-      "Low voltage drop",
-      "Fire-resistant construction",
-      "Tap-off units at regular intervals",
-      "IP54/IP65/IP68 protection options"
-    ],
-    benefits: [
-      "30-50% space savings vs cables",
-      "Faster installation time",
-      "Easy reconfiguration and expansion",
-      "Lower lifetime maintenance costs",
-      "Superior electrical performance",
-      "Enhanced safety features"
-    ],
-    specifications: {
-      "Current Rating": "630A - 6300A",
-      "Voltage": "Up to 1000V",
-      "Frequency": "50/60 Hz",
-      "Protection": "IP54/IP65/IP68",
-      "Conductor Material": "Electrolytic Copper/Aluminum",
-      "Insulation": "Class B/F/H"
-    },
-    applications: [
-      "High-rise commercial buildings",
       "Data centers and server rooms",
-      "Manufacturing facilities",
-      "Hospitals",
-      "Shopping malls",
-      "Airport terminals"
+      "High-rise commercial buildings",
+      "Garment & textile factories",
+      "Hospitals and healthcare facilities",
+      "Large-scale infrastructure projects"
     ]
   },
   "fire-safety": {
     id: "fire-safety",
-    title: "Fire & Life Safety Systems",
+    title: "Fire & Life Safety Solutions",
     category: "Safety Solutions",
     image: "/placeholder-fire.jpg",
-    shortDescription: "Detection, suppression and life-safety solutions certified by PCJ Industries.",
-    longDescription: "Comprehensive fire detection and suppression systems designed to protect lives and property. Our solutions include addressable fire alarm systems, gas suppression systems, sprinkler systems, and emergency evacuation systems. All products are certified by PCJ Industries and comply with NFPA and BS standards.",
+    shortDescription: "Detection, suppression and life-safety solutions certified by PCJ Industries & NFPA compliant.",
+    longDescription: "Protecting lives and assets through state-of-the-art fire detection and suppression systems. We provide end-to-end solutions including addressable fire alarms, automatic gas suppression, and industrial fire pump systems, all adhering to NFPA and BNBC standards.",
     features: [
       "Addressable fire detection systems",
-      "Gas suppression (FM200, Novec 1230)",
-      "Sprinkler and hydrant systems",
-      "Emergency voice evacuation",
-      "Smoke and heat detectors",
-      "Manual call points",
-      "Fire control panels",
-      "Integration with building management"
+      "Gas suppression (FM200, Novec 1230, CO2)",
+      "Automatic sprinkler and hydrant systems",
+      "Fire-rated doors and life safety equipment",
+      "Smoke management and evacuation systems",
+      "Integrated fire alarm control panels",
+      "UL/FM certified fire pumps",
+      "PCJ Industries certified components"
     ],
     benefits: [
-      "Early fire detection and warning",
-      "Automated suppression response",
-      "Minimal false alarms",
-      "Life safety compliance",
-      "Property protection",
-      "Insurance premium reduction"
+      "Early detection for minimal damage",
+      "Compliance with local and global safety codes",
+      "Reduced insurance premiums",
+      "Automated emergency response",
+      "Minimal false alarm rates",
+      "Comprehensive training for site personnel"
     ],
     specifications: {
-      "Detection Type": "Smoke, Heat, Flame, Gas",
-      "System Type": "Conventional/Addressable",
-      "Suppression Agents": "FM200, Novec 1230, CO2",
-      "Standards": "NFPA, BS, EN",
-      "Coverage": "Up to 2000 devices per loop",
-      "Backup": "72 hours standby"
+      "Detection Type": "Smoke, Heat, Flame, Multi-sensor",
+      "System Type": "Full Addressable / Conventional",
+      "Suppression": "Clean Agent, Water, Foam",
+      "Standards": "NFPA, BNBC, BS, EN",
+      "Certified by": "PCJ Industries",
+      "Monitoring": "24/7 Central Monitoring available"
     },
     applications: [
-      "Office buildings",
+      "Factories and warehouses",
+      "Commercial office towers",
+      "Hotels and shopping malls",
       "Data centers",
-      "Industrial facilities",
-      "Warehouses",
-      "Hotels and hospitality",
+      "Chemical and oil storage",
       "Residential complexes"
     ]
   },
-  "solar-epc": {
-    id: "solar-epc",
-    title: "Solar EPC Solutions",
+  "solar-solutions": {
+    id: "solar-solutions",
+    title: "Sustainable Solar Solutions",
     category: "Renewable Energy",
     image: "/placeholder-solar.jpg",
-    shortDescription: "End-to-end design, supply, install and commissioning of grid-tied solar plants.",
-    longDescription: "Complete solar EPC (Engineering, Procurement, and Construction) services for grid-tied and off-grid solar power plants. From initial feasibility study to final commissioning, we handle every aspect of your solar project. Our solutions help reduce energy costs, carbon footprint, and provide energy independence.",
+    shortDescription: "End-to-end design, supply, install and commissioning of grid-tied & industrial solar plants.",
+    longDescription: "Harnessing renewable energy through high-efficiency solar EPC services. We provide turnkey solutions for industrial rooftops and commercial plants, helping businesses transition to green energy while significantly reducing operational costs and carbon footprints.",
     features: [
-      "Site assessment and feasibility study",
-      "Custom system design and engineering",
-      "Tier-1 solar panel procurement",
-      "Grid-tied and off-grid solutions",
-      "Net metering facilitation",
-      "Real-time monitoring systems",
-      "O&M services",
-      "Performance guarantees"
+      "Net metering facilitation with utility grid",
+      "High-efficiency Tier-1 solar modules",
+      "Industrial-grade string and central inverters",
+      "Custom mounting structures for rooftops",
+      "IoT-based real-time performance monitoring",
+      "Automatic panel cleaning systems",
+      "Battery energy storage (BESS) options",
+      "Annual Maintenance Contracts (AMC)"
     ],
     benefits: [
-      "Up to 70% reduction in electricity bills",
-      "ROI within 4-6 years",
-      "25+ year system lifespan",
-      "Carbon footprint reduction",
-      "Energy independence",
-      "Government incentives available"
+      "Reduce electricity bills by up to 70%",
+      "Payback period within 4-6 years",
+      "25-year performance warranty",
+      "Contribution to Green Factory certification",
+      "Protection against rising energy costs",
+      "Low maintenance renewable power"
     ],
     specifications: {
-      "System Capacity": "10kW - 10MW+",
-      "Panel Efficiency": "Up to 22%",
-      "Inverter Type": "String/Central/Micro",
-      "Mounting": "Rooftop/Ground/Carport",
-      "Monitoring": "IoT-based real-time",
-      "Warranty": "25 years performance"
+      "Capacity Range": "50kWp to 5MWp+",
+      "Module Type": "Monocrystalline PERC / Bifacial",
+      "Inverter Efficiency": "Up to 98.5%",
+      "Monitoring": "Web & Mobile Cloud-based",
+      "Payback Period": "Estimated 4-5 Years",
+      "Lifespan": "25+ Years"
     },
     applications: [
-      "Industrial rooftops",
-      "Commercial buildings",
-      "Residential complexes",
-      "Solar farms",
-      "Agricultural installations",
-      "Remote off-grid locations"
+      "Industrial factory rooftops",
+      "Commercial building roofs",
+      "Cold storage facilities",
+      "Educational campuses",
+      "Solar farms and parks",
+      "Remote industrial sites"
     ]
   },
-  "industrial-automation": {
-    id: "industrial-automation",
-    title: "Industrial Automation",
-    category: "Automation & Control",
-    image: "/placeholder-automation.jpg",
-    shortDescription: "PLC, SCADA and process automation tailored to factory requirements.",
-    longDescription: "Advanced industrial automation solutions including PLC programming, SCADA systems, HMI design, and complete process automation. We help manufacturers improve productivity, quality, and operational efficiency through cutting-edge automation technologies from leading global brands.",
+  "civil-construction": {
+    id: "civil-construction",
+    title: "Civil & Industrial Construction",
+    category: "Infrastructure",
+    image: "/placeholder-construction.jpg",
+    shortDescription: "Specialized industrial civil works, factory flooring and warehouse infrastructure development.",
+    longDescription: "Providing specialized civil engineering and construction services tailored for industrial environments. From heavy-duty foundation work for machinery to specialized industrial flooring and warehouse construction, we ensure your infrastructure is built for durability and performance.",
     features: [
-      "PLC programming and integration",
-      "SCADA system development",
-      "HMI design and implementation",
-      "VFD and motor control systems",
-      "Process instrumentation",
-      "Industrial networking",
-      "Predictive maintenance systems",
-      "Energy management systems"
+      "Heavy industrial machine foundations",
+      "Laser-level epoxy and PU flooring",
+      "Pre-engineered building (PEB) solutions",
+      "Warehouse and cold storage construction",
+      "Industrial drainage and ETP civil works",
+      "Facility renovation and reinforcement",
+      "Structural safety assessments",
+      "Turnkey factory interior development"
     ],
     benefits: [
-      "Increased production efficiency",
-      "Reduced operational costs",
-      "Improved product quality",
-      "Real-time process visibility",
-      "Predictive maintenance capabilities",
-      "Reduced downtime"
+      "Designed for heavy industrial loads",
+      "Fast-track construction timelines",
+      "Durability against chemical and thermal stress",
+      "Compliance with industrial building codes",
+      "One-stop solution for civil and MEP",
+      "Superior finish and quality control"
     ],
     specifications: {
-      "PLC Brands": "Siemens, ABB, Schneider",
-      "SCADA": "WinCC, Wonderware, Ignition",
-      "Communication": "Profibus, Profinet, Modbus",
-      "I/O Capacity": "Scalable",
-      "Redundancy": "Hot standby available",
-      "Security": "Industrial cybersecurity"
+      "Scope": "Industrial Civil & Structural",
+      "Flooring": "Epoxy, PU, VDF, Self-leveling",
+      "Foundation": "Piling, Raft, Isolated",
+      "Codes": "BNBC, ACI, ASTM",
+      "Timeline": "Project specific execution",
+      "Safety": "Zero-harm industrial standards"
     },
     applications: [
-      "Manufacturing plants",
-      "Process industries",
-      "Water treatment facilities",
-      "Power plants",
-      "Oil & gas facilities",
-      "Food & beverage industry"
-    ]
-  },
-  "direct-import": {
-    id: "direct-import",
-    title: "Direct Import & Supply",
-    category: "Supply Chain",
-    image: "/placeholder-import.jpg",
-    shortDescription: "Authorized supply of ABB, Schneider, Siemens components — 100% genuine.",
-    longDescription: "As authorized partners of global leaders like ABB, Schneider Electric, and Siemens, we provide 100% genuine electrical components with full manufacturer warranty and traceability. Our direct import model ensures competitive pricing, authentic products, and reliable after-sales support.",
-    features: [
-      "Authorized distributor network",
-      "100% genuine products guaranteed",
-      "Full manufacturer warranty",
-      "Complete product traceability",
-      "Competitive pricing",
-      "Fast delivery",
-      "Technical support",
-      "After-sales service"
-    ],
-    benefits: [
-      "Eliminate counterfeit risk",
-      "Manufacturer warranty coverage",
-      "Competitive pricing",
-      "Reliable supply chain",
-      "Technical expertise",
-      "Quick replacement support"
-    ],
-    specifications: {
-      "Brands": "ABB, Schneider, Siemens, EAE",
-      "Product Range": "Complete portfolio",
-      "Warranty": "Manufacturer standard",
-      "Certification": "CE, UL, IEC",
-      "Origin": "Europe/Asia",
-      "Documentation": "Complete"
-    },
-    applications: [
-      "Project procurement",
-      "Maintenance & replacement",
-      "System upgrades",
-      "New installations",
-      "Emergency supply",
-      "Bulk orders"
+      "New factory establishment",
+      "Industrial floor upgrades",
+      "Warehouse expansion",
+      "Machinery installation support",
+      "Office & industrial interiors",
+      "Waterproofing & renovations"
     ]
   }
 };
@@ -358,6 +291,40 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* Sub-Products Section (if available) */}
+      {product.subProducts && (
+        <section className="py-20 bg-white">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+              <p className="text-gray-500 max-w-2xl mx-auto">
+                Specialized solutions for your power distribution needs
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {product.subProducts.map((item, index) => (
+                <div key={index} className="group rounded-3xl overflow-hidden bg-gray-50 border border-gray-100 hover:shadow-2xl transition-all duration-500">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-8">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Key Features */}
       <section className="py-20 bg-white">

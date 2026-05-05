@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clock, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import PageShell from "@/components/PageShell";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
@@ -16,10 +16,22 @@ const Contact = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 700));
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name");
+    const company = formData.get("company");
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const service = formData.get("service");
+    const message = formData.get("message");
+
+    const subject = `New Project Inquiry from ${name}`;
+    const body = `Full Name: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${service}\n\nProject Details:\n${message}`;
+
+    window.location.href = `mailto:info@gooddeal-bd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setLoading(false);
-    toast({ title: "Message sent", description: "Our engineering team will respond within one business day." });
-    (e.target as HTMLFormElement).reset();
+    toast({ title: "Opening email client...", description: "Please complete the message in your email application." });
   };
 
   return (
@@ -76,9 +88,8 @@ const Contact = () => {
           <div className="space-y-4 lg:col-span-5">
             {[
               { icon: MapPin, title: "Headquarters", body: "Dhaka, Bangladesh" },
-              { icon: Mail, title: "Email", body: "info@gooddeal-bd.com" },
-              { icon: Phone, title: "Phone", body: "+880 1XXX-XXXXXX" },
-              { icon: Clock, title: "Working hours", body: "Sun – Thu · 9:00 AM – 6:00 PM" },
+              { icon: Mail, title: "Email", body: "info@gooddeal-bd.com", link: "mailto:info@gooddeal-bd.com" },
+              { icon: Phone, title: "Phone", body: "+880 1619-302150", link: "tel:+8801619302150" },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 90}>
                 <div className="glass-card flex items-start gap-4 p-6">
@@ -87,7 +98,15 @@ const Contact = () => {
                   </span>
                   <div>
                     <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">{c.title}</div>
-                    <div className="mt-1 font-display text-base font-semibold">{c.body}</div>
+                    <div className="mt-1 font-display text-base font-semibold">
+                      {c.link ? (
+                        <a href={c.link} className="hover:text-primary transition-colors">
+                          {c.body}
+                        </a>
+                      ) : (
+                        c.body
+                      )}
+                    </div>
                   </div>
                 </div>
               </Reveal>
