@@ -1,13 +1,40 @@
-import { ArrowUpRight, Cable, Cpu, Flame, PlugZap, Sun, Truck } from "lucide-react";
+import { ArrowUpRight, Zap, Flame, Sun, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const services = [
+<<<<<<< HEAD
   { icon: PlugZap, title: "Electrical & Power Distribution", body: "MV/LV switchgear, EAE busbar systems and transformers engineered to IEC standards.", id: "electrical-power" },
   { icon: Flame, title: "Fire & Life Safety Solutions", body: "Detection, suppression and life-safety solutions certified by PCJ Industries & NFPA compliant.", id: "fire-safety" },
   { icon: Sun, title: "Sustainable Solar Solutions", body: "End-to-end design, supply, install and commissioning of grid-tied & industrial solar plants.", id: "solar-solutions" },
   { icon: Truck, title: "Civil & Industrial Construction", body: "Specialized industrial civil works, factory flooring and warehouse infrastructure development.", id: "civil-construction" },
+=======
+  { 
+    icon: Zap, 
+    title: "Electrical & Power Distribution", 
+    body: "Complete MV/LV power distribution solutions including switchgear, transformers, busbar trunking systems, and panel boards engineered to international IEC standards.", 
+    id: "electrical-power" 
+  },
+  { 
+    icon: Flame, 
+    title: "Fire & Life Safety Solutions", 
+    body: "Comprehensive fire detection, suppression, and life safety systems certified to NFPA and BS standards for complete building protection.", 
+    id: "fire-safety" 
+  },
+  { 
+    icon: Sun, 
+    title: "Sustainable Solar Solutions", 
+    body: "End-to-end solar EPC services from feasibility study to commissioning of grid-tied and off-grid solar power plants for sustainable energy.", 
+    id: "solar-solutions" 
+  },
+  { 
+    icon: Building, 
+    title: "Civil & Industrial Construction", 
+    body: "Professional construction services for industrial facilities, commercial buildings, and infrastructure projects with quality assurance.", 
+    id: "civil-construction" 
+  },
+>>>>>>> f29561a9473c8896ad1fc618311fc913ccb14207
 ];
 
 export const ServicesSection = () => (
