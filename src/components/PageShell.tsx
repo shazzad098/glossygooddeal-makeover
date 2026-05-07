@@ -11,7 +11,7 @@ export const PageShell = ({ children }: PropsWithChildren) => {
   return (
     <div className="relative min-h-screen overflow-x-clip bg-background text-foreground">
       <Navbar />
-      <main key={pathname} className="animate-fade-up">{children}</main>
+      <main key={pathname} className="animate-fade-up pt-24 md:pt-28">{children}</main>
       <Footer />
     </div>
   );

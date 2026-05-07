@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <PageShell>
-      <section className="relative isolate overflow-hidden pb-12 pt-6">
+      <section className="relative isolate overflow-hidden pb-12">
         <div className="absolute inset-0 -z-10 bg-hero" />
         <AnimatedOrb className="-top-24 left-[-80px]" color="blue" size={520} />
         <div className="mx-auto max-w-7xl px-6">
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="relative pb-24 bg-secondary/50 pt-16">
+      <section className="relative pb-24 bg-secondary/50">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <form onSubmit={onSubmit} className="glass-strong rounded-3xl p-8 md:p-10">
