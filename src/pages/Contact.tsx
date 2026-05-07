@@ -36,19 +36,18 @@ const Contact = () => {
 
   return (
     <PageShell>
-      <section className="relative isolate overflow-hidden pb-12">
+      <section className="relative isolate overflow-hidden pt-32 pb-12 md:pt-40">
         <div className="absolute inset-0 -z-10 bg-hero" />
         <AnimatedOrb className="-top-24 left-[-80px]" color="blue" size={520} />
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeading
-            eyebrow="Contact"
             title={<>Let's discuss your <span className="text-primary italic">next project.</span></>}
             subtitle="Tell us about your requirements — power, busbar, fire & safety or solar EPC. We respond within one business day."
           />
         </div>
       </section>
 
-      <section className="relative pb-24 bg-secondary/50">
+      <section className="relative pb-24">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <form onSubmit={onSubmit} className="glass-strong rounded-3xl p-8 md:p-10">

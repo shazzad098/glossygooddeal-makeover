@@ -25,17 +25,13 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed left-0 right-0 z-50 px-4 md:px-8 transition-all duration-500 ${
-        isScrolled ? "top-0 py-2" : "top-3 md:top-4 py-3"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? "bg-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20 py-2"
+          : "bg-slate-900/60 backdrop-blur-md border-b border-white/10 py-4"
       }`}
     >
-      <div
-        className={`max-w-7xl mx-auto rounded-2xl transition-all duration-500 ${
-          isScrolled
-            ? "bg-slate-900/90 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/20"
-            : "bg-slate-900/40 backdrop-blur-md border border-white/10 shadow-lg"
-        }`}
-      >
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="px-5 py-2 flex items-center justify-between">
           {/* Logo with gradient text */}
           <Link to="/" className="group cursor-pointer">

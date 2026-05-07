@@ -25,17 +25,13 @@ const AuthorizedAgent = () => {
   return (
     <PageShell>
       {/* Hero Section - More human and welcoming */}
-      <section className="relative overflow-hidden py-12 md:py-16 bg-white">
+      <section className="relative overflow-hidden pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-50 rounded-full blur-3xl" />
 
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="relative z-10"> {/* এখানে relative z-10 যোগ করা হয়েছে */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
-                <Heart className="h-4 w-4 text-primary fill-primary" />
-                <span className="text-sm font-medium text-blue-700">We're here to help</span>
-              </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
                 Direct from the world's{' '}

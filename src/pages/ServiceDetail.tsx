@@ -289,7 +289,7 @@ const ServiceDetail = () => {
   return (
     <PageShell>
       {/* Hero Section */}
-      <section className="pb-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="mx-auto max-w-7xl px-6">
           {/* Back Button */}
           <button

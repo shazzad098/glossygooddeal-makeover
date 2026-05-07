@@ -104,7 +104,7 @@ const Services = () => {
   return (
     <PageShell>
       {/* Services Grid - What we actually do */}
-      <section className="py-16 bg-gray-50">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What we actually do</h2>

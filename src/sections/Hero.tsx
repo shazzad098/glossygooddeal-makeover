@@ -103,7 +103,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 pt-20">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 pt-32">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         {videos.map((video, index) => (
